@@ -14,19 +14,29 @@
     <meta name="author" content="Juan Su&aacute;rez" />
   </head>
   <body>
-    <div class="icono">
-      <div class="bar"></div>
+    <div class="icono" onclick="menuButton(this)">
+      <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
-    <aside class="menu"></aside>
+     <nav class="icon-bar">
+        <ul>
+          <li>
+            <a class="default" href="#"><img src="/assets/home.svg" alt="Inicio">Inicio</a>
+            <a href="#"><img src="/assets/home.svg">Temas del Curso</a>
+            <a href="#"><img src="/assets/home.svg">Evaluaciones|Pruebas</a>
+            <a href="#"><img src="/assets/home.svg">Laboratorios</a>
+            <a href="#"><img src="/assets/home.svg">Tareas</a>
+          </li>
+        </ul>
+      </nav>
     <header>
       <h1>USABILIDAD Y ACCESIBILIDAD</h1>
       <h2>Semana 2: 06/10/2025</h2>
       <h2>Affordance en UX: qué es, tipos y ejemplos</h2>
     </header>
-
     <main>
+     
       <section>
         <h3>Significante</h3>
         <p>
@@ -68,4 +78,9 @@
       </article>
     </main>
   </body>
+  <script>
+    function menuButton(x){
+      x.classList.toggle("change")
+    }
+  </script>
 </html>
