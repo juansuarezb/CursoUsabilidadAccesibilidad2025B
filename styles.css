@@ -7,7 +7,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #34111b;
+  background-color: #FEFCEF;
   font-family: "Abhaya Libre", serif;
 }
 header {
@@ -16,7 +16,7 @@ header {
 header h1 {
   color: white;
 }
-header h2{
+header h2, header h1{
   color:#7c0b26;
 }
 main {
@@ -34,7 +34,7 @@ main article {
   justify-content: center; /* centra verticalmente las 3 barras */
   align-items: center; /* centra horizontalmente */
   cursor: pointer;
-  background-color: #7c0b26;
+  background-color: #814E38;
   height: 60px;
   width: 50px;
   border-radius: 30% 0% 0% 30%;
@@ -46,7 +46,7 @@ main article {
 .bar3 {
   width: 35px;
   height: 6px;
-  background-color: #100c09;
+  background-color: #E3D5B7;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -72,8 +72,7 @@ main article {
 }
 .icon-bar {
   width: 90px;
-  background-color: #7c0b26;
-  opacity: 0.5;
+  background-color: #793720;
 }
 .icon-bar a {
   color: white;
