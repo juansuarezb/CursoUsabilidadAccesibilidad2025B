@@ -97,3 +97,7 @@ main article {
 .default{
   background-color: #100c09;
 }
+
+section{
+  border: 1px solid red;
+}
