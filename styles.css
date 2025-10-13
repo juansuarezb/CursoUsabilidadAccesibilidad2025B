@@ -8,7 +8,7 @@
   --main-title: #7c0b26;
   --main-icon-menu: #814E38;
   --main-icon-linebar: #E3D5B7;
-  --icon-bar-background: #793720;
+  --icon-bar-background: #814E38;
   --icon-bar-a:white ;
 }
 html,
@@ -76,7 +76,11 @@ main article {
   margin: 0;
 }
 .icon-bar {
-  width: 90px;
+  width: fit-content;
+  position: fixed;
+  margin-top: 40px;
+  right: 0;
+  opacity: 0.8;
   background-color: var(--icon-bar-background);
 }
 .icon-bar a {
@@ -91,6 +95,8 @@ main article {
 }
 .icon-bar ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .icon-bar li{
   border-bottom: 1px solid #100c09;
@@ -99,10 +105,6 @@ main article {
 .icon-bar a:hover{
   background-color:#34111b;
 }
-.default{
-  background-color: #100c09;
-}
-
 section{
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
