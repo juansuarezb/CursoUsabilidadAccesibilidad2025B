@@ -38,6 +38,8 @@ main article {
   height: 60px;
   width: 50px;
   border-radius: 30% 0% 0% 30%;
+  position: fixed;
+  top: 0;
 }
 .bar1,
 .bar2,
@@ -86,11 +88,13 @@ main article {
 .icon-bar ul {
   list-style: none;
 }
-
+.icon-bar li{
+  border-bottom: 1px solid #100c09;
+  border-top: 1px solid #100c09;
+}
 .icon-bar a:hover{
   background-color:#34111b;
 }
-
 .default{
   background-color: #100c09;
 }
