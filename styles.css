@@ -5,7 +5,7 @@
 }
 :root{
   --background-color: #FEFCEF;
-  --main-title: #7c0b26;
+  --main-title: #814E38;
   --main-icon-menu: #814E38;
   --main-icon-linebar: #E3D5B7;
   --icon-bar-background: #814E38;
@@ -16,9 +16,16 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
-  font-family: "Abhaya Libre", serif;
+  font-family: 'Minecraftia', cursive;
 }
-header {
+body{
+  padding-top: 2.5rem;
+}
+body > header {
+  text-align: center;
+
+}
+article header{
   text-align: center;
 }
 header h1 {
@@ -26,6 +33,10 @@ header h1 {
 }
 header h2, header h1{
   color: var(--main-title);
+  font-weight: bolder;
+  margin: 0.2em 0;
+  padding: 0;
+  font-family: 'Abhaya Libre', serif;
 }
 main section,
 main article {
@@ -70,7 +81,7 @@ main article {
   background-color: var(--icon-bar-background);
   z-index: 9999;
   transition: transform 0.25s ease, opacity 0.25s ease;
-  transform: translate(100%);
+  transform: translate(150%);
   pointer-events: none;
 }
 .icon-bar.show {
@@ -88,6 +99,9 @@ main article {
   font-size: 20px;
   text-decoration: none;
 }
+.default{
+  background-color: var(--main-icon-linebar);
+}
 .icon-bar ul {
   list-style: none;
   margin: 0;
@@ -102,9 +116,9 @@ main article {
 }
 section{
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 20px 0;
+  margin: 60px 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 section:hover{
