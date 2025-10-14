@@ -17,7 +17,7 @@ main{
 .cubierta{
     position: absolute;
     width: 300px;
-    height: 480px;
+    height: 400px;
     background-color: #793720;
     z-index: 1; /* Asegura que esté detrás del menú */
     margin-top: 9rem;
@@ -29,25 +29,38 @@ main{
     z-index: 2; /* Asegura que esté delante de la cubierta */
     position: relative;
     margin-top: 9.4rem;
-    width: 100%;
     max-width: 280px;
-    height: 100%;
     min-height: 350px;
+}
+.courses h2{
+    text-align: right;
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
 }
 .courses ul{
     list-style: none;
-    padding: 100px 20px;
-    margin: 0;
-    text-align: center;
+    margin-top: -1rem;
+    margin-left: 0.1rem;
+    padding-left: 20px;
 }
 .courses ul li a{
-    display: block;
     color: black !important;
     font-size: 18px;
     color: var(--main-title);
     text-decoration: none;
 }
-
 .courses ul li a:hover{
     color: blueviolet !important;
 }
+.arrow {
+  cursor: pointer;
+}
+
+.flechas{
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;}
