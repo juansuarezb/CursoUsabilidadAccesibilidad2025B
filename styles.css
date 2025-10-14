@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Minecraftia';
+  src: url('Minecraftia.ttf') format('truetype');
+}
 *,
 *::after,
 *::before {
@@ -20,6 +24,7 @@ body {
 }
 body{
   padding-top: 2.5rem;
+  cursor: url("cursor.png"), auto;
 }
 body > header {
   text-align: center;
@@ -36,7 +41,6 @@ header h2, header h1{
   font-weight: bolder;
   margin: 0.2em 0;
   padding: 0;
-  font-family: 'Abhaya Libre', serif;
 }
 main section,
 main article {

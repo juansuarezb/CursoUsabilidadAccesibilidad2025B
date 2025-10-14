@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.bunny.net">
   <link href="https://fonts.bunny.net/css?family=abhaya-libre:600" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="usabilidad.css" />
   <meta name="description" content="página web estructurada por semanas 
     que resume los contenidos vistos en clase del curso de Usabilidad y Accesibilidad, 
     impartido en la Escuela Politécnica Nacional." />
@@ -180,7 +181,7 @@
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#" class="tablink" onclick="openPage('TrabajoClase', this, 'red')">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 4.25C3 3.00736 
                 4.00736 2 5.25 2H14.75C15.9926 
@@ -327,8 +328,8 @@
         <li>Señales de tr&aacute;nsito.</li>
       </ul>
     </section>
-    <section>
-      <h3>Tarea en clase</h3>
+    <section class="tabcontent" id="TrabajoClase">
+      <h3>Trabajo en clase</h3>
       <p>
         Mirar el video "Asequibilidad, significantes, y mapas mentales" de Don
         Norman.<br /><a href="
@@ -449,6 +450,32 @@
     const menu = document.querySelector('.icon-bar');
     if(menu) menu.classList.toggle('show');
   }
+  function openPage(pageName, elmnt, color) {
+  // Ocultar todos los tabcontent
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Resetear colores de todos los tablinks
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Mostrar el tabcontent seleccionado
+  document.getElementById(pageName).style.display = "block";
+
+  // Cambiar color del enlace seleccionado
+  if(elmnt) elmnt.style.backgroundColor = color;
+}
+
+// Abrir por defecto
+document.addEventListener("DOMContentLoaded", function(){
+  var defaultLink = document.querySelector(".tablink");
+  if(defaultLink) defaultLink.click();
+});
 </script>
 </body>
 </html>
