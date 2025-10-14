@@ -339,6 +339,13 @@
         <br />Identificar objetos que sean de asequibilidad percibida
       </p>
     </section>
+    <section id="TrabajoCasa">
+      <h3>Trabajo en casa</h3>
+      <p>
+        Buscar 5 ejemplos de objetos que sean de asequibilidad real y 5
+        ejemplos de objetos que sean de asequibilidad percibida.
+      </p>
+    </section>
     <article class="semana3">
       <header>
         <h1>Semana 3</h1>
@@ -444,13 +451,13 @@
       </p>
     </section>
   </main>
-    <script>
-  function menuButton(x) {
+  <script>
+    function menuButton(x) {
     x.classList.toggle("change");
     const menu = document.querySelector('.icon-bar');
     if(menu) menu.classList.toggle('show');
   }
-  function openPage(pageName, elmnt, color) {
+    function openPage(pageName, elmnt, color) {
   // Ocultar todos los tabcontent
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -470,12 +477,10 @@
   // Cambiar color del enlace seleccionado
   if(elmnt) elmnt.style.backgroundColor = color;
 }
-
-// Abrir por defecto
-document.addEventListener("DOMContentLoaded", function(){
+    document.addEventListener("DOMContentLoaded", function(){
   var defaultLink = document.querySelector(".tablink");
   if(defaultLink) defaultLink.click();
 });
-</script>
+  </script>
 </body>
 </html>
