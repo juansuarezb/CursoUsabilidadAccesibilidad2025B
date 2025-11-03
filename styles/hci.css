@@ -1,3 +1,8 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .ejemplos > img {
     border-radius: 8px;
     width: 100%;
@@ -19,10 +24,61 @@
     
 }
 
+.color figure{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
 .color figure img {
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px #000;
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Texto encima de la imagen */
+.color figure h3 {
+  position: absolute;
+  bottom: -3rem; /* distancia desde el borde inferior */
+  left: 3.5rem;   /* distancia desde el borde izquierdo */
+  color: hsl(0, 36%, 95%);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "Minecraftia", sans-serif; /* si usas esa fuente */
+  font-size: 4.1rem;
+}
+
+.banner-color {
+  position: relative;
+  width: 100vw; /* ocupa todo el ancho visible */
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw; /* centra el bloque completo */
+  margin-right: -50vw;
+  overflow: hidden;
+}
+
+.banner-color img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: center; /* centrado */
+  display: block;
+}
+
+
+.circuloCromatico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circuloCromatico img {
     border-radius: 8px;
     box-shadow: 0px 0px 30px #000;
-    width:100%; 
-    max-height: 200px; 
+    width: 680px;
+    height: 380px;
     object-fit: cover;
 }
