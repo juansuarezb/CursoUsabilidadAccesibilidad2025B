@@ -32,7 +32,7 @@ body > header {
   text-align: center;
 
 }
-article header{
+article header, section header {
   text-align: center;
 }
 header h1 {
